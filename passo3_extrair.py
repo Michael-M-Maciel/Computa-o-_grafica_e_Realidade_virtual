@@ -7,7 +7,7 @@ import os
 import cv2
 from placas_utils import encontrar_candidatos_placa, extrair_placa, corrigir_perspectiva, SAIDA_DIR
 
-PLACA_PATH = os.path.join(SAIDA_DIR, "placa_teste.png")
+PLACA_PATH = os.path.join(SAIDA_DIR, "placa_michael.png")
 img = cv2.imread(PLACA_PATH)
 if img is None:
     print("ERRO: execute passo1_preprocess.py primeiro.")

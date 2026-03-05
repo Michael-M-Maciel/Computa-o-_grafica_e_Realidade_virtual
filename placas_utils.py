@@ -12,9 +12,10 @@ import re
 # Diretórios de saída (relativos ao projeto)
 # ─────────────────────────────────────────────────────────────
 _BASE = os.path.dirname(os.path.abspath(__file__))
-SAIDA_DIR  = os.path.join(_BASE, "saida")          # imagens geradas
-CARROS_DIR = os.path.join(_BASE, "saida", "carros") # lote de carros
-DEBUG_DIR  = os.path.join(_BASE, "saida", "debug")  # imagens de debug
+# Use um diretório sem caracteres especiais para evitar problemas de codificação
+SAIDA_DIR  = os.path.join("C:\\temp", "saida")          # imagens geradas
+CARROS_DIR = os.path.join("C:\\temp", "saida", "carros") # lote de carros
+DEBUG_DIR  = os.path.join("C:\\temp", "saida", "debug")  # imagens de debug
 
 for _d in (SAIDA_DIR, CARROS_DIR, DEBUG_DIR):
     os.makedirs(_d, exist_ok=True)
